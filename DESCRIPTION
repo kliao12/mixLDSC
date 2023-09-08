@@ -1,0 +1,15 @@
+Package: mixLDSC
+Title: R package containing functions to run mixLDSC to identify SNP sets and genes driving signals of local genetic correlation
+Version: 0.0.0.9000
+Authors@R: 
+    person("Kevin", "Liao", , "ksliao@umich.edu", role = c("aut", "cre"),
+           comment = c(ORCID = ""))
+Description: This package contains all necessary functions to run mixLDSC. mixLDSC was developed to follow up regions of local genetic correlation to identify specific SNPs or genes driving the shared genetic signal across two traits.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Depends: 
+    R (>= 2.10)
+LazyData: true
