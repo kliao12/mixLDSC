@@ -7,3 +7,6 @@ Input:
    
 Output: 
 1) Per-snp posterior probability of belonging to genetically correlated group. 
+
+
+# Example workflow: 
