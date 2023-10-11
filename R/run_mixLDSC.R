@@ -5,9 +5,9 @@
 #' Any rows with duplicated row names will be dropped with the first one being
 #'
 #' @param inFile Path to the input file
-#' @return A dataframe of summary statistics with columns chr, pos, a0, a1, beta
+#' @return A dataframe of summary statistics with columns 1) z1_z2  2)ld 3) weight corresponding to product of z-scores, ld scores, and weights for each SNP
 #' @export
-run_mixLDSC <- function(df, p_list){
+run_mixLDSC <- function(df, p_list, N1, N2){
   new_df = df 
   
   #Define jags models
