@@ -4,13 +4,13 @@
 \alias{run_mixLDSC}
 \title{Get prior means and variances using empirical bayes approach}
 \usage{
-run_mixLDSC(df, p_list)
+run_mixLDSC(df, p_list, N1, N2)
 }
 \arguments{
 \item{inFile}{Path to the input file}
 }
 \value{
-A dataframe of summary statistics with columns chr, pos, a0, a1, beta
+A dataframe of summary statistics with columns 1) z1_z2  2)ld 3) weight corresponding to product of z-scores, ld scores, and weights for each SNP
 }
 \description{
 This function loads a file as a matrix. It assumes that the first column
