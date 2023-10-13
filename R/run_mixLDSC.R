@@ -113,5 +113,8 @@ run_mixLDSC <- function(df, p_list, N1, N2){
   zetas_minus_one <- zetas-1
   
   new_df$post_prob_pos <- apply(zetas_minus_one, 2, mean)
-  return(new_df) 
+  output_list <- list("new_df" = new_df, "beta0_1" = beta0_1, 
+                      "beta0_2" = beta0_2, "beta1_1" = beta1_1, 
+                      "beta1_2" = beta1_2)
+  return(output_list) 
 }
