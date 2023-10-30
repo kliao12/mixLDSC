@@ -26,7 +26,7 @@ run_mixLDSC <- function(df, p_list, N1, N2){
     beta0[2] ~ dnorm(", p_list$b0_est, ", ", sqrt(N1*N2)*p_list$b0_se_prec, ")
     
     beta1[1] ~ dnorm(0, 100)
-    beta1[2] ~ dnorm(", p_list$b1_est, ", ", sqrt(N1*N2)*p_list$b1_se_prec, ") 
+    beta1[2] ~ dnorm(", p_list$avg_b1, ", ", sqrt(N1*N2)*p_list$b1_se_prec, ") 
     
     beta1_sorted[1:2] <- sort(beta1) 
     
